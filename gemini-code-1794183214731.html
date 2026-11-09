@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>*** SAVE OUR FRIEND TUCKER !!! THE ULTIMATE RESCUE OPERATION ***</title>
+  <style>
+    /* Classic Tiled Background & Retro Web 1.0 Aesthetics */
+    body {
+      background-color: #1a0000; /* Spooky dark crimson background */
+      background-image: 
+        radial-gradient(#ff0000, rgba(255,0,0,.1) 1px, transparent 30px),
+        radial-gradient(#330000, rgba(51,0,0,.1) 1px, transparent 20px);
+      background-size: 400px 400px, 250px 250px;
+      color: #000000;
+      font-family: "Comic Sans MS", "Comic Sans", "Times New Roman", cursive, sans-serif;
+      margin: 0;
+      padding: 10px;
+    }
+
+    #main-wrapper {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      background-color: #ffcccc; /* Warning light red container */
+      border: 6px ridge #800000;
+      padding: 10px;
+      box-shadow: 0 0 30px #ff0000;
+    }
+
+    /* Top Animated Marquee Ticker */
+    .ticker-bar {
+      background-color: #800000;
+      color: #ffff00;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 5px;
+      border: 2px outset #ffffff;
+      margin-bottom: 15px;
+    }
+
+    header {
+      text-align: center;
+      background: linear-gradient(to bottom, #800000, #330000);
+      padding: 20px;
+      border: 4px inset #cccccc;
+      margin-bottom: 20px;
+    }
+
+    /* Glowing Neon Headline */
+    h1 {
+      color: #00ff00;
+      font-size: 42px;
+      margin: 0;
+      text-transform: uppercase;
+      text-shadow: 3px 3px 0px #000000, 6px 6px 0px #ff0000;
+      letter-spacing: 2px;
+    }
+
+    .blinking-text {
+      animation: blinker 1s linear infinite;
+      color: #ffff00;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    @keyframes blinker {
+      50% { opacity: 0; }
+    }
+
+    /* Side-by-Side Flexbox Layout for Images */
+    #comparison-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .frame {
+      flex: 1;
+      max-width: 48%;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Style for the Left Frame (Monster) */
+    .frame-monster {
+      background-color: #330000;
+      border: 4px groove #ff0000;
+    }
+
+    /* Style for the Right Frame (Tucker) */
+    .frame-tucker {
+      background-color: #004d00;
+      border: 4px groove #00ff00;
+    }
+
+    .frame img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    /* Retro Caption Boxes */
+    .caption-box {
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 2px outset #cccccc;
+      padding: 5px;
+      margin-top: 8px;
+    }
+
+    .caption-box p {
+      margin: 5px 0;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .text-monster { color: #ff0000; text-shadow: 1px 1px 1px black; }
+    .text-tucker { color: #00ff00; text-shadow: 1px 1px 1px black; }
+
+    /* Centered Text Info Box */
+    .content-box {
+      background-color: #ffffff;
+      border: 3px inset #999999;
+      padding: 15px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Big retro action button */
+    .donate-area {
+      text-align: center;
+      background-color: #660000;
+      border: 5px dashed #ffff00;
+      padding: 20px;
+      margin: 25px 0;
+    }
+
+    .btn-retro {
+      display: inline-block;
+      background: linear-gradient(to bottom, #ffff00 0%, #ff8c00 100%);
+      color: #000000;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 28px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 15px 35px;
+      border: 4px outset #ffff00;
+      text-shadow: 1px 1px 1px #ffffff;
+      cursor: pointer;
+      box-shadow: 5px 5px 0px #000000;
+    }
+
+    .btn-retro:active {
+      border-style: inset;
+      box-shadow: 2px 2px 0px #000000;
+    }
+
+    /* Visitor Counter */
+    .counter-box {
+      text-align: center;
+      margin: 20px 0;
+      color: #333333;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .counter-digits {
+      background-color: #000000;
+      color: #00ff00;
+      padding: 5px 10px;
+      border: 2px inset #ffffff;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #333333;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="main-wrapper">
+    
+    <!-- Ticker Banner -->
+    <div class="ticker-bar">
+      <marquee behavior="scroll" direction="left" scrollamount="6">
+        *** EMERGENCY OPERATION: SAVE OUR FRIEND TUCKER FROM THE MONSTER !!! FUND THE OZEMPIC PRESCRIPTION NOW !!! WE NEED YOUR HELP TODAY !!! ***
+      </marquee>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+      <h1>SAVE TUCKER FROM THE MONSTER!</h1>
+      <div class="blinking-text">DANGER! URGENT ASSISTANCE NEEDED NOW!</div>
+    </header>
+
+    <!-- Side-by-Side Image Container -->
+    <div id="comparison-container">
+      
+      <!-- Frame Left: THE MONSTER -->
+      <div class="frame frame-monster">
+        <!-- Replace with your monster image filename or URL -->
+        <img src="clive eating rocks.jpg" alt="The Monster">
+        <div class="caption-box">
+          <p class="text-monster">THE MONSTER IS LURKING OUTSIDE!</p>
+          <p style="color:white; font-size:12px;">Spotted near the perimeter.</p>
+        </div>
+      </div>
+
+      <!-- Frame Right: TUCKER -->
+      <div class="frame frame-tucker">
+        <!-- Replace with your Tucker image filename or URL -->
+        <img src="crazy tucker.jpg" alt="Tucker">
+        <div class="caption-box">
+          <p class="text-tucker">OUR FRIEND TUCKER NEEDS RESCUE!</p>
+          <p style="color:white; font-size:12px;">The focus of our fundraising.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- The Mission Info Box -->
+    <div class="content-box">
+      <p style="color: #800000; font-weight: bold; font-size: 18px;">Welcome, brave rescuers and web citizens!</p>
+      <p>Our friend Tucker is currently in serious trouble! On one side, he is being stalked by a terrifying monster that has been lurking outside and eating bizarre things (pictured left). On the other side, Tucker is facing an intense health hurdle and desperately needs his Ozempic prescription filled to stay healthy and strong (pictured right).</p>
+      <p>We are banding together to fend off this monster and secure the funds for his crucial medication. Every dollar helps push the threat away and gets Tucker closer to the care he needs!</p>
+    </div>
+
+    <!-- Action Button -->
+    <div class="donate-area">
+      <p style="color: #ffff00; font-size: 22px; font-weight: bold; margin-top: 0;">CHIP IN TO DEFEAT THE MONSTER & FUND THE PRESCRIPTION!</p>
+      <a href="https://www.gofundme.com" target="_blank" class="btn-retro">>>> CONTRIBUTE NOW <<<</a>
+    </div>
+
+    <!-- Counter -->
+    <div class="counter-box">
+      <span>MISSION ACCESS VISITORS: </span>
+      <span class="counter-digits">00091455</span>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Tucker Defense Fund. This site is created with urgency and devotion.</p>
+      <p>Best viewed at 1024x768 or higher while blasting urgent midi music.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
